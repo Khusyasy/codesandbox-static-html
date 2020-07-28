@@ -9,29 +9,45 @@
     <title>Todo List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="frame">
+    <div id="root"></div>
 
-        <section class="header">
-          <button class="header-btn">Add</button>
-          <h1 class="header-title">Todo List</h1>
-          <button class="header-btn red-color">Clear</button>
-        </section>
+    <script type="text/babel">
+      class App extends React.Component {
+        render(){
+          return(
+            <div class="container">
+              <div class="frame">
 
-        <section class="add">
-          <form action="" class="add-form">
-            <input type="text" class="add-input">
-            <button class="add-btn">Add</button>
-          </form>
-        </section>
+                <section class="header">
+                  <button class="header-btn">Add</button>
+                  <h1 class="header-title">Todo List</h1>
+                  <button class="header-btn red-color">Clear</button>
+                </section>
 
-        <section class="todos">
-          <div class="todo">
-            <span class="todo-text">Learning React</span>
-          </div>
-        </section>
+                <section class="add">
+                  <form action="" class="add-form">
+                    <input type="text" class="add-input"/>
+                    <button class="add-btn">Add</button>
+                  </form>
+                </section>
 
-      </div>
-    </div>
+                <section class="todos">
+                  <div class="todo">
+                    <span class="todo-text">Learning React</span>
+                  </div>
+                </section>
+
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+    
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js" crossorigin></script>
   </body>
 </html>
