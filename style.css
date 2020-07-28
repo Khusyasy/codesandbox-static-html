@@ -25,6 +25,7 @@ html {
 
 :root {
   --red-color: #f22d2d;
+  --black-color: #202020;
 }
 
 .red-color {
@@ -41,11 +42,12 @@ html {
 }
 
 .frame {
-  border: 1px solid black;
+  border: 1px solid var(--black-color);
   height: 100%;
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -58,6 +60,7 @@ html {
 
   text-align: center;
 
+  color: var(--black-color);
   font-size: 3.6rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -67,7 +70,7 @@ html {
   font-size: 1.8rem;
   font-family: "Courier New", Courier, monospace;
 
-  padding: 16px;
+  padding: 1.6rem;
 
   border: unset;
   background: unset;
@@ -104,11 +107,42 @@ html {
   font-size: 1.8rem;
   font-family: "Courier New", Courier, monospace;
 
-  padding: 16px;
+  padding: 1.6rem;
   padding-right: unset;
   cursor: pointer;
 
   border: unset;
   background: unset;
   outline: unset;
+}
+
+.add-btn:active {
+  text-shadow: 1px 1px 2px var(--black-color);
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+
+  flex: 1 0 auto;
+  text-align: center;
+
+  min-height: 34px;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.6rem;
+
+  border-bottom: 0.1rem solid var(--red-color);
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
 }
