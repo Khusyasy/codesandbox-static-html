@@ -62,13 +62,13 @@ html {
 
   color: var(--black-color);
   font-size: 3.6rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Homemade Apple", cursive;
+  text-transform: lowercase;
 }
 
 .header-btn {
   font-size: 1.8rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Bungee", cursive;
 
   padding: 1.6rem;
 
@@ -89,7 +89,7 @@ html {
 .add-input {
   background: unset;
   border: unset;
-  padding: 0 6.4rem;
+  padding: 1rem 6.4rem;
 
   flex: 1;
 
@@ -97,15 +97,14 @@ html {
   outline: unset;
 
   font-size: 1.6rem;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Homemade Apple", cursive;
 
   text-transform: lowercase;
 }
 
 .add-btn {
   font-size: 1.8rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Bungee", cursive;
 
   padding: 1.6rem;
   padding-right: unset;
@@ -133,8 +132,7 @@ html {
 
   min-height: 34px;
 
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Homemade Apple", cursive;
   font-size: 1.6rem;
 
   border-bottom: 0.1rem solid var(--red-color);
@@ -143,6 +141,5 @@ html {
 .todo-text {
   position: absolute;
   left: 50%;
-  top: 40%;
   transform: translate(-50%);
 }
